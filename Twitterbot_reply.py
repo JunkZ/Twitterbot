@@ -30,8 +30,6 @@ while(1):
            elif (current.text == "@yourbot retweetthis"):
                api.retweet(currentid)
                api.update_status('Done!',currentid)
-           elif (current.text == "@yourbot apirate"):
-               api.update_status('Current api requests remaining for current hour is: ' + str(api.rate_limit_status(),currentid))
            elif (current.text == ("@yourbot hi" or "@yourbot hello" or "@yourbot Hi" or "@yourbot Hello")):
                api.update_status('hi :)',currentid)
 
