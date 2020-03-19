@@ -18,9 +18,9 @@ api = initaccount()
 
 while(1):
 	t = Tweeter()
-	date = time.strftime('%d:%m')
+	date = time.strftime('%d/%m')
 	clock = time.strftime('%H:%M')
-	message = (clock+" "+date + " - Server status: online!")
+	message = (date+" "+clock + " - Server status: online!")
 	print(message)
 	print("tweeting....")
 	api.update_status(message)
